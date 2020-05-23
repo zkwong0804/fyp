@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "wongzhenkai",
+    "password": "1234QWer##",
+    "database": "fyp2",
+    "host": "10.0.24.18",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "wongzhenkai",
+    "password": "1234QWer##",
+    "database": "fyp2",
+    "host": "10.0.24.18",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "wongzhenkai",
+    "password": "1234QWer##",
+    "database": "fyp2",
+    "host": "10.0.24.18",
+    "dialect": "mysql"
+  }
+}

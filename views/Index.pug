@@ -1,0 +1,64 @@
+extends Frame
+
+block content
+    section(id="panel-section")
+        form(action="" method="post" id="search-route-form")
+
+            div(id="input-area")
+                div 
+                    input(type="text" id="origin" placeholder="ORIGIN" value="6 Miles Jalan Kota Tinggi,, Jalan Pandan, 81100 Johor Bahru, Johor, Malaysia" class="long-bar" required)
+
+                div
+                    input(type="text" id="destination" placeholder="DESTINATION" value="213, Jalan Kenanga 29/2, Bandar Indahpura, 81000 Kulai, Johor, Malaysia" class="long-bar" required)
+
+                div(id="btn-area")
+                    div(id="feature-select" class="square-btn non-pushed")
+                        input(value="" readOnly)                
+                        input(type="hidden" id="features" value="2" readOnly)
+                        input(value="HIS" readOnly)
+                        input(value="" readOnly)
+
+                        
+                    div(id="toll-select" class="square-btn pushed-down")
+                        input(type="hidden" value="true" name="toll" id="toll-val")
+                        input(value="" readOnly)
+                        input(value="TOLL" class="toll-true" id="toll-text" readOnly)
+                        input(value="" readOnly)
+                
+                div 
+                    input(type="text" id="historical-start" placeholder="START" value="01012019" class="long-bar")
+                div 
+                    input(type="text" id="historical-end" placeholder="END" value="01012019" class="long-bar")
+                    
+                div
+                    input(type="text" id="google" placeholder="GOOGLE" value="AIzaSyA8v-SEuu8nnoPaU9dkT8VjySVPPIu6m6w" class="long-bar")
+                    
+                div
+                    input(type="submit" class="long-bar" value="SEARCH")
+                    
+                //- div
+                //-     div(id="arrow-div")
+                //-         <i class="fas fa-caret-left fa-2x" id="left-arrow"></i>
+                //-         <i class="fas fa-caret-right fa-2x" id="right-arrow"></i>
+                //-     input(id="source-select" class="long-bar non-input" value="GOOGLE" readOnly)
+
+    section(id="canvas-section")
+        canvas(id="display-chart")
+
+    section(id="polyline-section")
+        section(id="polyline-display")
+            iframe(
+                id="direction-map"
+                src="", 
+                width="1280", 
+                height="720", 
+                frameborder="0", 
+                style="border:0")
+
+block scripts
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js")
+  script(src="scripts/modules.js" type="module")
+  script(src="scripts/toll-button.js")
+  script(src="scripts/source-select.js" type="module")
+  script(src="scripts/search.js")
+//-   script(src="scripts/feature-button.js" type="module")

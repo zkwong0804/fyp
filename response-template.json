@@ -1,0 +1,38 @@
+{
+    "status": "success",
+    "statusMsg": "xx",
+    "origin": {
+        "address": "###",
+        "lat": 0.00,
+        "lng": 0.00
+    },
+    "destination": {
+        "address": "###",
+        "lat": 0.00,
+        "lng": 0.00
+    },
+    "google": {
+        "1":{
+            "distance":0,
+            "duration":0
+        },
+        "2":{
+            "result":[
+                {"distance":0,"duration":0,"datetime":"###"},
+                {"distance":0,"duration":0,"datetime":"###"}
+            ]
+        }
+    },
+    "bing": {
+        "1":{
+            "distance":0,
+            "duration":0
+        },
+        "2":{
+            "result":[
+                {"distance":0,"duration":0,"datetime":"###"},
+                {"distance":0,"duration":0,"datetime":"###"}
+            ]
+        }
+    }
+}
